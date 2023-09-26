@@ -1,0 +1,4 @@
+request==2.31.0
+pandas==2.1.1
+clickhouse-connect==0.6.13
+apache-airflow==2.7.1
