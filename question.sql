@@ -25,7 +25,7 @@ from (
 	from 
 		cnt_table
 	where 
-		cnt_table.cnt > 100
+		cnt_table.cnt > 2000
 	) a
 	
 inner join (
