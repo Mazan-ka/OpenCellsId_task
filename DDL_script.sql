@@ -15,4 +15,5 @@ CREATE table OpenCellId_data (
 	averageSignal UInt64
 ) 
 Engine = MergeTree()
-order by (radio, mcc, area, cell);
+order by (radio, mcc, area, cell)
+partition by mcc;
