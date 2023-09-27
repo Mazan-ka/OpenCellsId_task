@@ -29,8 +29,7 @@ default_args = {
 def taskflow():
     @task(task_id="extract_data", retries=2)
     def get_df_from_http():
-        url = "https://opencellid.org/ocid/downloads?token=pk.e85bbb9bc9488b0524f8e509a349023c&type=diff&file=OCID" \
-              "-diff-cell-export-2023-09-19-T000000.csv.gz "
+        url = "https://opencellid.org/ocid/downloads?token=pk.1069fc85f1e203f6a1cb5a28e1d3f57f&type=full&file=cell_towers.csv.gz "
 
         # Выполняю GET-запрос с заголовком "Accept-Encoding" для указания поддержки gzip
         with requests.get(url, headers={"Accept-Encoding": "gzip"}, stream=True) as response:
